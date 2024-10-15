@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:background="@color/black">
+
+
+
+    <!-- Add the custom view -->
+    <com.smartherd.boxdrop1.BoxDropView
+        android:id="@+id/boxDropView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tap_to_drop_box"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/resetButton"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="end"
+        android:src="@drawable/reset"
+        app:tint="#747474"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="70dp"/>
+
+
+    <ImageView
+        android:id="@+id/themeToggleImage"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="start"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="70dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/sun_icon" />
+
+</FrameLayout>
